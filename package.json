@@ -1,0 +1,15 @@
+{
+  "name": "repofromzero",
+  "version": "1.0.0",
+  "description": "Repository created from zero",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open",
+    "file": "cypress run --browser chrome --reporter --reporter cypress-multi-reporters --reporter-options configFile=jsconfig.json --record --key b67179b0-ea19-4a75-9d40-73494d327f84 --spec"
+  },
+  "author": "Sebastian Avila",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^4.2.0"
+  }
+}
