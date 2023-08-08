@@ -33,4 +33,4 @@ jobs:
               with:
                   browser: chrome
                   command: | #EDITAR AQUÍ EL ARCHIVO SUITE A EJECUTAR:
-                      yarn file cypress/integration/modelo.spec.js
+                      yarn file cypress/integration/modelo.cy.js
