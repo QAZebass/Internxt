@@ -3,7 +3,7 @@
     "compilerOptions": {
         "types": ["cypress"]
     },
-    "reporterEnabled": "spec, mocha-junit-reporter, mochawesome",
+    "reporterEnabled": ["spec", "mocha-junit-reporter", "mochawesome"], // Fixed this line
     "mochaJunitReporterReporterOptions": {
         "mochaFile": "reports/test-results.xml",
         "toConsole": false,

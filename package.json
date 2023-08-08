@@ -5,11 +5,19 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
-    "file": "cypress run --browser chrome --key b67179b0-ea19-4a75-9d40-73494d327f84 --spec cypress/integration/modelo.spec.js"
+    "file": "cypress run --browser chrome --reporter cypress-multi-reporters --reporter-options configFile=jsconfig.json --record --key b67179b0-ea19-4a75-9d40-73494d327f84 --spec cypress/integration/modelo.cy.js"
   },
   "author": "Sebastian Avila",
   "license": "ISC",
-  "dependencies": {
-    "cypress": "^4.2.0"
+  "devDependencies": {
+    "cypress": "^12.17.3",
+    "cypress-mochawesome-reporter": "3.2.3",
+    "cypress-multi-reporters": "^1.6.3",
+    "junit-report-merger": "4.0.0",
+    "mocha": "10.2.0",
+    "mocha-junit-reporter": "2.2.0",
+    "mochawesome": "7.1.3",
+    "mochawesome-merge": "4.2.2",
+    "mochawesome-report-generator": "6.2.0"
   }
 }
