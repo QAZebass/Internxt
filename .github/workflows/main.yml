@@ -41,6 +41,7 @@ jobs:
               with: 
                   username: ${{secrets.XRAY_CLIENT_ID}}
                   password: ${{secrets.XRAY_CLIENT_SECRET}}
+                  xrayToken: 'ATATT3xFfGF0TRPX5XaHCvH7PVYL87IJbivPUXlrncNydsfLYKLRTN3LSS2NQcQAzsWXzgpIb_ji3S6vSqJ3a981CrDn6C4A-UK3T0hgciS-MfVGjd2_0-fsxuzH-zqgEHnVoLQZ084HqC9JJsaKcMeF2Z_PWeWgX0eVIf2l5s18DBGmxfMu2FU=7220BB71' 
                   testFormat: 'junit' 
                   testPaths: 'reports/test-results.xml' 
                   testExecKey: 'REP-5' #EDITAR AQUÍ EL TEST EXECUTION A IMPORTAR LAS PRUEBAS.
