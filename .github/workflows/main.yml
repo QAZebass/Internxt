@@ -39,8 +39,8 @@ jobs:
               if: always()
               uses: mikepenz/xray-action@v2
               with: 
-                  username: 'Sebastian'
-                  password: 'Arioncete1122'
+                  username: ${{secrets.XRAY_CLIENT_ID}}
+                  password: ${{secrets.XRAY_CLIENT_SECRET}}
                   testFormat: 'junit' 
                   testPaths: 'reports/test-results.xml' 
                   testExecKey: 'REP-5' #EDITAR AQUÍ EL TEST EXECUTION A IMPORTAR LAS PRUEBAS.
