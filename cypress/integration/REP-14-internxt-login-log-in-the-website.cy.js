@@ -1,4 +1,5 @@
 import data from '../fixtures/staticData'
+import 'cypress-wait-until'
 import { home } from '../support/home'
 import { login } from '../support/login'
 import { app } from '../support/profileapp'
