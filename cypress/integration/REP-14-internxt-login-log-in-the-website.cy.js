@@ -5,6 +5,7 @@ import { app } from '../support/profileapp'
 import { removeLogs } from './removeLogs/removelogs'
 describe('REP-14-internxt-login-log-in-the-website',()=>{
     before('Preconditions',()=>{
+        cy.clearAllCookies()
         cy.visit('/')
         cy.url().should('equal', data.urls.home)
     })
@@ -13,7 +14,7 @@ describe('REP-14-internxt-login-log-in-the-website',()=>{
         login.emailInput(data.userCredentials.email)
         login.passwordInput(data.userCredentials.password)
         login.clickLogIn()
-        cy.wait(8000)
+        cy.wait(3000)
         cy.url().should('equal', data.urls.app)
     })
 })

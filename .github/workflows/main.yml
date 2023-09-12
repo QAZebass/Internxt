@@ -31,7 +31,7 @@ jobs:
             - name: 🧪Cypress Run Test Coverage in Chrome
               uses: cypress-io/github-action@v4
               with:
-                  browser: chrome
+                  browser: electron
                   command: | #EDITAR AQUÍ EL ARCHIVO SUITE A EJECUTAR:
                       yarn file cypress/integration/REP-14-internxt-login-log-in-the-website.cy.js
 
