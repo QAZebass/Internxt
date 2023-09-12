@@ -13,6 +13,7 @@ describe('REP-14-internxt-login-log-in-the-website',()=>{
         cy.url().should('equal', data.urls.home)
     })
     it('REP-15 | TC1: Validate the user can log in successfully',()=>{
+        cy.visit('/')
         home.clickOnLoginButton()
         login.emailInput(data.userCredentials.email)
         login.passwordInput(data.userCredentials.password)
