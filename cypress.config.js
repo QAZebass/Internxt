@@ -17,6 +17,6 @@ module.exports = defineConfig({
 	e2e: {
 		// Glob pattern to determine what test files to load:
 		specPattern: ['cypress/integration/**/*.cy.{js,jsx,ts,tsx,}'],
-		baseUrl: 'https://internxt.com/es'
+		baseUrl: 'https://internxt.com'
 	},
 });

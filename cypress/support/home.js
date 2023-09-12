@@ -1,10 +1,15 @@
+import 'cypress-wait-until'
 class Home{
     get={
-        logInButton:()=> cy.get('[id="loginButton"]').first()
+        logInButton:()=> cy.get('[class^="mr-2"]')
     }
     clickOnLoginButton(){
-        this.get.logInButton().should('have.text', 'Iniciar sesión')
-        this.get.logInButton().click()
+        cy.waitUntil(()=>
+        this.get.logInButton().should('have.text', 'Log in')).then((el)=>{
+            el.click()
+        })
+
+        
     }
 }
 export const home = new Home()
