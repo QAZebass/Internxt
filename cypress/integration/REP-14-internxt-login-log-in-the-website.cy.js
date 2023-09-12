@@ -7,6 +7,8 @@ import { removeLogs } from './removeLogs/removelogs'
 describe('REP-14-internxt-login-log-in-the-website',()=>{
     before('Preconditions',()=>{
         cy.clearAllCookies()
+        cy.clearAllSessionStorage()
+        cy.clearAllLocalStorage()
         cy.visit('/')
         cy.url().should('equal', data.urls.home)
     })

@@ -1,7 +1,7 @@
 import 'cypress-wait-until'
 class Home{
     get={
-        logInButton:()=> cy.get('[id="loginButton"]:not(.flex)', {timeout:10000})
+        logInButton:()=> cy.get('button').contains('Iniciar sesión')
     }
     clickOnLoginButton(){
         cy.waitUntil(()=>
