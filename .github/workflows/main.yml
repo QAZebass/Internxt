@@ -43,5 +43,5 @@ jobs:
                   password: ${{secrets.XRAY_CLIENT_SECRET}}
                   testFormat: 'junit' 
                   testPaths: 'reports/test-results.xml' 
-                  testExecKey: 'REP-5' 
+                  testExecKey: 'REP-16' 
                   projectKey: 'REP' 
