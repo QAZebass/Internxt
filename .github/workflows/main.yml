@@ -33,7 +33,7 @@ jobs:
               with:
                   browser: chrome
                   command: | #EDITAR AQUÍ EL ARCHIVO SUITE A EJECUTAR:
-                      yarn file cypress/integration/modelo.cy.js
+                      yarn file cypress/integration/REP-14-internxt-login-log-in-the-website.cy.js
 
             - name: ✅Import Test Results to Xray
               if: always()
@@ -43,5 +43,5 @@ jobs:
                   password: ${{secrets.XRAY_CLIENT_SECRET}}
                   testFormat: 'junit' 
                   testPaths: 'reports/test-results.xml' 
-                  testExecKey: 'REP-5' #EDITAR AQUÍ EL TEST EXECUTION A IMPORTAR LAS PRUEBAS.
-                  projectKey: 'REP' #EDITAR EN CASO DE TRABAJAR CON OTRO PROYECTO.
+                  testExecKey: 'REP-5' 
+                  projectKey: 'REP' 
