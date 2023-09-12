@@ -13,6 +13,7 @@ describe('REP-14-internxt-login-log-in-the-website',()=>{
         login.emailInput(data.userCredentials.email)
         login.passwordInput(data.userCredentials.password)
         login.clickLogIn()
+        cy.wait(10000)
         cy.url().should('equal', data.urls.app)
     })
 })
