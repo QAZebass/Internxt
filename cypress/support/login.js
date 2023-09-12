@@ -6,11 +6,11 @@ class Login{
 
     }
     emailInput(email){
-        this.get.emailInput().invoke('attr', 'placeholder').should('equal','Email')
+        this.get.emailInput().invoke('attr', 'placeholder').should('equal','Correo electrónico')
         this.get.emailInput().type(email)
     }
     passwordInput(password){
-        this.get.passwordInput().invoke('attr', 'placeholder').should('equal','Password')
+        this.get.passwordInput().invoke('attr', 'placeholder').should('equal','Contraseña')
         this.get.passwordInput().type(password)
     }
     clickLogIn(){
