@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cypress open",
-    "file": "cypress run --browser chrome --reporter cypress-multi-reporters --reporter-options configFile=jsconfig.json --record --key b67179b0-ea19-4a75-9d40-73494d327f84 --spec cypress/integration/REP-14-internxt-login-log-in-the-website.cy.js"
+    "file": "cypress run --browser electron --reporter cypress-multi-reporters --reporter-options configFile=jsconfig.json --record --key b67179b0-ea19-4a75-9d40-73494d327f84 --spec cypress/integration/REP-14-internxt-login-log-in-the-website.cy.js"
   },
   "author": "Sebastian Avila",
   "license": "ISC",
