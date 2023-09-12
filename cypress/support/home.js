@@ -1,6 +1,6 @@
 class Home{
     get={
-        logInButton:()=> cy.get('[id="loginButton"]').first()
+        logInButton:()=> cy.get('[id="loginButton"]:not(.flex)')
     }
     clickOnLoginButton(){
         this.get.logInButton().should('have.text', 'Iniciar sesión')
