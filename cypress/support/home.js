@@ -1,7 +1,7 @@
 import 'cypress-wait-until'
 class Home{
     get={
-        logInButton:()=> cy.get('button').contains('Log in')
+        logInButton:()=> cy.get('[class^="mr-2"]')
     }
     clickOnLoginButton(){
         cy.waitUntil(()=>
