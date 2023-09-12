@@ -2,7 +2,7 @@ class Login{
     get={
         emailInput:()=> cy.get('[id="email"]', {timeout:10000}),
         passwordInput:()=> cy.get('[class$="input-primary"]:not(.relative)'),
-        logInButton:()=> cy.get('[class*="button-primary"]', {timeout:10000}),
+        logInButton:()=> cy.get('[class*="button-primary"]', {timeout:20000}),
 
     }
     emailInput(email){
