@@ -6,15 +6,15 @@ class Login{
 
     }
     emailInput(email){
-        this.get.emailInput().invoke('attr', 'placeholder').should('equal','Correo electrónico')
+        this.get.emailInput().invoke('attr', 'placeholder').should('equal','Email')
         this.get.emailInput().type(email)
     }
     passwordInput(password){
-        this.get.passwordInput().invoke('attr', 'placeholder').should('equal','Contraseña')
+        this.get.passwordInput().invoke('attr', 'placeholder').should('equal','Password')
         this.get.passwordInput().type(password)
     }
     clickLogIn(){
-        this.get.logInButton().should('have.text', 'Iniciar Sesión').click()
+        this.get.logInButton().should('have.text', 'Log in').click()
     }
     clickUploadFiles(){
         this.get.subirArchivosButton().click()
